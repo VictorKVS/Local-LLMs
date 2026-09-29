@@ -1,0 +1,50 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Model weights / caches
+*.gguf
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+HF_CACHE/
+models/cache/
+runtime/
+
+# Generated / local
+logs/
+tmp/
+temp/
+*.log
+*.tmp
+*.incomplete
+
+# IDE / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Node (future frontend tooling)
+node_modules/
+dist/
+
+# Keep reports/screenshots, but not raw huge dumps
+data/raw/*.jsonl
+data/raw/*.parquet
