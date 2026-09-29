@@ -1,0 +1,102 @@
+{
+  "system_prompt": "You are a helpful, precise, and concise assistant.",
+  "seed": 42,
+  "models": [
+    {
+      "id": "Qwen/Qwen1.5-7B-Chat",
+      "short_name": "Qwen1.5-7B",
+      "enabled": true,
+      "trust_remote_code": true
+    },
+    {
+      "id": "deepseek-ai/deepseek-llm-7b-chat",
+      "short_name": "DeepSeek-7B",
+      "enabled": true,
+      "trust_remote_code": true
+    },
+    {
+      "id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "short_name": "Mistral-7B",
+      "enabled": true,
+      "trust_remote_code": false
+    },
+    {
+      "id": "IlyaGusev/saiga_llama3_8b",
+      "short_name": "Saiga-Llama3-8B",
+      "enabled": false,
+      "trust_remote_code": true
+    },
+    {
+      "id": "openchat/openchat-3.6-8b-20240522",
+      "short_name": "OpenChat-8B",
+      "enabled": false,
+      "trust_remote_code": true
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q1_story",
+      "text": "Напиши короткий рассказ (3–4 предложения) о том, как ты нашел загадочную записку в неожиданном месте."
+    },
+    {
+      "id": "Q2_trap",
+      "text": "В комнате горят 5 свечей. Две свечи погасли. Сколько свечей останется к утру? Объясни ответ."
+    }
+  ],
+  "experiments": [
+    {
+      "name": "temperature_low",
+      "temperature": 0.1,
+      "top_p": 0.9,
+      "max_new_tokens": 128
+    },
+    {
+      "name": "temperature_mid",
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "max_new_tokens": 128
+    },
+    {
+      "name": "temperature_high",
+      "temperature": 1.2,
+      "top_p": 0.9,
+      "max_new_tokens": 128
+    },
+    {
+      "name": "top_p_low",
+      "temperature": 0.7,
+      "top_p": 0.1,
+      "max_new_tokens": 128
+    },
+    {
+      "name": "top_p_mid",
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "max_new_tokens": 128
+    },
+    {
+      "name": "top_p_high",
+      "temperature": 0.7,
+      "top_p": 0.99,
+      "max_new_tokens": 128
+    },
+    {
+      "name": "tokens_short",
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "max_new_tokens": 64
+    },
+    {
+      "name": "tokens_mid",
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "max_new_tokens": 128
+    },
+    {
+      "name": "tokens_long",
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "max_new_tokens": 512
+    }
+  ]
+}
