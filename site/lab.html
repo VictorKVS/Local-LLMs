@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ru" data-page="lab">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#06090d">
+  <meta name="description" content="Local LLMs · FATHER Model Lab">
+  <title>Лаборатория · Local LLMs</title>
+  <link rel="stylesheet" href="./assets/css/tokens.css">
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/components.css">
+  <link rel="stylesheet" href="./assets/css/pages.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="./index.html" aria-label="Local LLMs home">
+      <span class="brand-mark">F</span>
+      <span>
+        <strong>LOCAL LLMs</strong>
+        <small>FATHER MODEL LAB</small>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a data-nav="home" href="./index.html">Обзор</a>
+      <a data-nav="lab" href="./lab.html">Лаборатория</a>
+      <a data-nav="models" href="./models.html">Model Zoo</a>
+      <a data-nav="architecture" href="./architecture.html">Архитектура</a>
+      <a data-nav="dz1" href="./dz1.html">ДЗ №1</a>
+      <a data-nav="roadmap" href="./roadmap.html">Roadmap</a>
+    </nav>
+    <a class="button header-github" href="https://github.com/VictorKVS/Local-LLMs" target="_blank" rel="noreferrer">GitHub ↗</a>
+  </div>
+</header>
+<main class="shell page">
+  <div class="page-head">
+    <div class="page-copy">
+      <div class="eyebrow">System Overview</div>
+      <h1>Лаборатория</h1>
+      <p class="lead">Реальная телеметрия локального запуска модели на NVIDIA GeForce RTX 3060 12 GB.</p>
+    </div>
+    <span class="badge badge-live">runtime healthy</span>
+  </div>
+
+  <section class="lab-grid">
+    <article class="card card-accent lab-card">
+      <span class="label">Active model</span>
+      <h3>Ministral 3B</h3>
+      <p>Q4_K_M · GGUF · llama.cpp</p>
+      <div class="progress"><i style="width:30%"></i></div>
+      <small>≈ 2.00 GB model file</small>
+    </article>
+
+    <article class="card lab-card">
+      <span class="label">VRAM</span>
+      <strong class="metric-value">3.69<span class="metric-unit">GB</span></strong>
+      <div class="progress"><i style="width:30%"></i></div>
+      <small>из 12 GB</small>
+    </article>
+
+    <article class="card lab-card">
+      <span class="label">Generation</span>
+      <strong class="metric-value">97.95<span class="metric-unit">tok/s</span></strong>
+      <p style="color:var(--green);margin:18px 0 0">GPU utilization 82%</p>
+      <small>128 generated tokens</small>
+    </article>
+
+    <article class="card lab-card">
+      <span class="label">Thermals</span>
+      <strong class="metric-value">57<span class="metric-unit">°C</span></strong>
+      <div class="progress"><i style="width:57%"></i></div>
+      <small>smoke test</small>
+    </article>
+  </section>
+
+  <section class="card pipeline-card">
+    <span class="label">Pipeline</span>
+    <h3 style="margin:7px 0 0">Запрос → Runtime → GPU → Ответ</h3>
+    <p class="muted" style="margin:6px 0 0">Модель запускается через собственный FATHER Runtime — независимо от LM Studio и Ollama.</p>
+    <div class="pipeline-row">
+      <span class="pipe-node">Prompt</span><span class="pipe-arrow">→</span>
+      <span class="pipe-node">Gateway</span><span class="pipe-arrow">→</span>
+      <span class="pipe-node">llama.cpp</span><span class="pipe-arrow">→</span>
+      <span class="pipe-node">CUDA</span><span class="pipe-arrow">→</span>
+      <span class="pipe-node">RTX 3060</span>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="shell footer-inner">
+    <span>LOCAL LLMs · FATHER MODEL LAB</span>
+    <span>Local-first · Traceable · Reproducible</span>
+  </div>
+</footer>
+<script src="./assets/js/app.js"></script>
+</body>
+</html>

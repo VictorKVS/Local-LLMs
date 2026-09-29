@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru" data-page="home">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#06090d">
+  <meta name="description" content="Local LLMs · FATHER Model Lab">
+  <title>Обзор · Local LLMs</title>
+  <link rel="stylesheet" href="./assets/css/tokens.css">
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/components.css">
+  <link rel="stylesheet" href="./assets/css/pages.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="./index.html" aria-label="Local LLMs home">
+      <span class="brand-mark">F</span>
+      <span>
+        <strong>LOCAL LLMs</strong>
+        <small>FATHER MODEL LAB</small>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a data-nav="home" href="./index.html">Обзор</a>
+      <a data-nav="lab" href="./lab.html">Лаборатория</a>
+      <a data-nav="models" href="./models.html">Model Zoo</a>
+      <a data-nav="architecture" href="./architecture.html">Архитектура</a>
+      <a data-nav="dz1" href="./dz1.html">ДЗ №1</a>
+      <a data-nav="roadmap" href="./roadmap.html">Roadmap</a>
+    </nav>
+    <a class="button header-github" href="https://github.com/VictorKVS/Local-LLMs" target="_blank" rel="noreferrer">GitHub ↗</a>
+  </div>
+</header>
+<main>
+  <section class="shell hero">
+    <div>
+      <div class="eyebrow">Local AI · GPU Lab · Model Routing</div>
+      <h1>Локальные LLM<br><span>как инженерная система</span></h1>
+      <p class="lead">Весь курс в одном инженерном контуре: запуск моделей, Model Zoo, GPU-runtime, benchmark, анализ параметров генерации и постепенная интеграция компонентов в FATHER.</p>
+      <div class="button-row" style="margin-top:28px">
+        <a class="button button-primary" href="./dz1.html">Открыть ДЗ №1</a>
+        <a class="button" href="./architecture.html">Смотреть архитектуру</a>
+      </div>
+    </div>
+
+    <div class="hero-console" aria-label="Runtime telemetry preview">
+      <div class="console-bar">
+        <span class="console-dot"></span><span class="console-dot"></span><span class="console-dot"></span>
+        <span class="console-title">father-runtime://local</span>
+      </div>
+      <pre>$ father models status
+
+<span class="ok">● ONLINE</span>  RTX 3060 / 12 GB
+<span class="ok">● READY</span>   llama.cpp CUDA runtime
+<span class="ok">● LIVE</span>    Ministral 3B Q4_K_M
+
+<span class="key">VRAM</span>      3.69 GB
+<span class="key">GEN</span>       97.95 tok/s
+<span class="key">GPU</span>       82%
+<span class="key">CONTEXT</span>   4096
+
+route:
+request → gateway → runtime → GPU</pre>
+    </div>
+  </section>
+
+  <section class="shell home-metrics" aria-label="Ключевые показатели">
+    <article class="card"><span class="label">GPU</span><strong class="metric-value">RTX 3060</strong><span class="muted">12 GB VRAM</span></article>
+    <article class="card"><span class="label">Model Zoo</span><strong class="metric-value">6</strong><span class="muted">HF + GGUF</span></article>
+    <article class="card"><span class="label">Measured speed</span><strong class="metric-value">97.95<span class="metric-unit">tok/s</span></strong><span class="muted">Ministral 3B</span></article>
+    <article class="card"><span class="label">DZ1 corpus</span><strong class="metric-value">36+</strong><span class="muted">готовых ответов</span></article>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="shell footer-inner">
+    <span>LOCAL LLMs · FATHER MODEL LAB</span>
+    <span>Local-first · Traceable · Reproducible</span>
+  </div>
+</footer>
+<script src="./assets/js/app.js"></script>
+</body>
+</html>

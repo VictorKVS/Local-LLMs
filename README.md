@@ -7,6 +7,14 @@
 [![Runtime](https://img.shields.io/badge/runtime-llama.cpp-111827?style=flat-square)](#)
 [![Status](https://img.shields.io/badge/status-in%20progress-69A7FF?style=flat-square)](#)
 
+## Быстрые ссылки
+
+- **Course Portal:** https://victorkvs.github.io/Local-LLMs/
+- [Frontend Standard](./docs/FRONTEND_STANDARD.md)
+- [Course Structure](./docs/COURSE_STRUCTURE.md)
+- [Screenshot Guide](./docs/SCREENSHOT_GUIDE.md)
+- [Site README](./site/README.md)
+
 ## О проекте
 
 Этот репозиторий хранит весь учебный трек **Local LLMs** и одновременно служит публичной инженерной витриной.
@@ -34,7 +42,7 @@
 | Ministral 8B | 🟡 зарегистрирован |
 | Qwen2.5 14B | 🟡 зарегистрирован |
 | Ministral 14B Reasoning | 🟡 зарегистрирован |
-| Course Portal / GitHub Pages | 🚧 развивается |
+| Course Portal / GitHub Pages | 🚧 подключается |
 
 ### Измеренный baseline
 
@@ -105,7 +113,7 @@ flowchart LR
 
 ## Course Portal
 
-Публичный сайт курса будет развиваться как отдельный frontend-полигон для роли **Makar / Frontend & Visual Systems**.
+Публичный сайт курса — отдельный frontend-полигон для роли **Makar / Frontend & Visual Systems**.
 
 Ключевые требования:
 
@@ -115,10 +123,23 @@ flowchart LR
 - адаптивная сетка;
 - читаемость на 1366–1920 px;
 - отдельный screenshot mode для отчётов;
-- тёмный «engineering + restrained magic» visual language;
+- тёмный **Strict Magic / Engineering Noir** visual language;
 - визуализации benchmark, runtime и Model Zoo;
 - WCAG-friendly contrast;
 - минимальная зависимость от внешних библиотек.
+
+Локальный preview:
+
+```powershell
+cd "G:\1\Local LLMs"
+python -m http.server 8080 --directory site
+```
+
+Screenshot mode:
+
+```text
+http://127.0.0.1:8080/dz1.html?shot=1
+```
 
 ## Принципы репозитория
 

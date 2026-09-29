@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ru" data-page="models">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#06090d">
+  <meta name="description" content="Local LLMs · FATHER Model Lab">
+  <title>Model Zoo · Local LLMs</title>
+  <link rel="stylesheet" href="./assets/css/tokens.css">
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/components.css">
+  <link rel="stylesheet" href="./assets/css/pages.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="./index.html" aria-label="Local LLMs home">
+      <span class="brand-mark">F</span>
+      <span>
+        <strong>LOCAL LLMs</strong>
+        <small>FATHER MODEL LAB</small>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a data-nav="home" href="./index.html">Обзор</a>
+      <a data-nav="lab" href="./lab.html">Лаборатория</a>
+      <a data-nav="models" href="./models.html">Model Zoo</a>
+      <a data-nav="architecture" href="./architecture.html">Архитектура</a>
+      <a data-nav="dz1" href="./dz1.html">ДЗ №1</a>
+      <a data-nav="roadmap" href="./roadmap.html">Roadmap</a>
+    </nav>
+    <a class="button header-github" href="https://github.com/VictorKVS/Local-LLMs" target="_blank" rel="noreferrer">GitHub ↗</a>
+  </div>
+</header>
+<main class="shell page">
+  <div class="page-head">
+    <div class="page-copy">
+      <div class="eyebrow">Model Zoo</div>
+      <h1>Реестр моделей</h1>
+      <p class="lead">Единая витрина локальных моделей с назначением, форматом, размером и текущим статусом.</p>
+    </div>
+    <span class="badge badge-mint">6 моделей</span>
+  </div>
+
+  <section class="model-grid">
+    <article class="card card-accent model-card">
+      <div class="model-head"><span class="model-class">3B</span><span class="badge badge-live">LIVE</span></div>
+      <h3>Ministral 3B Instruct</h3><p>GGUF · Q4_K_M</p>
+      <dl class="model-meta"><div><dt>Размер</dt><dd>2.00 GB</dd></div><div><dt>Роль</dt><dd>FAST / TRIAGE</dd></div></dl>
+    </article>
+
+    <article class="card model-card">
+      <div class="model-head"><span class="model-class">7B</span><span class="badge badge-info">BENCHMARKED</span></div>
+      <h3>Qwen1.5 7B Chat</h3><p>HF / Transformers</p>
+      <dl class="model-meta"><div><dt>Размер</dt><dd>14.39 GB</dd></div><div><dt>Роль</dt><dd>BASELINE</dd></div></dl>
+    </article>
+
+    <article class="card model-card">
+      <div class="model-head"><span class="model-class">7B</span><span class="badge badge-info">BENCHMARKED</span></div>
+      <h3>DeepSeek LLM 7B Chat</h3><p>HF / Transformers</p>
+      <dl class="model-meta"><div><dt>Размер</dt><dd>12.88 GB</dd></div><div><dt>Роль</dt><dd>ANALYSIS</dd></div></dl>
+    </article>
+
+    <article class="card model-card">
+      <div class="model-head"><span class="model-class">8B</span><span class="badge badge-ready">REGISTERED</span></div>
+      <h3>Ministral 8B Instruct</h3><p>GGUF · Q4_K_M</p>
+      <dl class="model-meta"><div><dt>Размер</dt><dd>4.84 GB</dd></div><div><dt>Роль</dt><dd>GENERAL</dd></div></dl>
+    </article>
+
+    <article class="card model-card">
+      <div class="model-head"><span class="model-class">14B</span><span class="badge badge-ready">REGISTERED</span></div>
+      <h3>Qwen2.5 14B Instruct</h3><p>GGUF · Q4_K_M</p>
+      <dl class="model-meta"><div><dt>Размер</dt><dd>8.37 GB</dd></div><div><dt>Роль</dt><dd>DEEP ANALYSIS</dd></div></dl>
+    </article>
+
+    <article class="card model-card">
+      <div class="model-head"><span class="model-class">14B</span><span class="badge badge-ready">REGISTERED</span></div>
+      <h3>Ministral 14B Reasoning</h3><p>GGUF · Q4_K_M</p>
+      <dl class="model-meta"><div><dt>Размер</dt><dd>7.67 GB</dd></div><div><dt>Роль</dt><dd>REASONING</dd></div></dl>
+    </article>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="shell footer-inner">
+    <span>LOCAL LLMs · FATHER MODEL LAB</span>
+    <span>Local-first · Traceable · Reproducible</span>
+  </div>
+</footer>
+<script src="./assets/js/app.js"></script>
+</body>
+</html>
