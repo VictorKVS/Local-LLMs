@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru" data-page="models">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Local LLMs / FATHER Model Lab">
+<title>Model Zoo · Local LLMs</title>
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="noise"></div>
+
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">F</span>
+    <span><strong>LOCAL LLMs</strong><small>FATHER MODEL LAB</small></span>
+  </a>
+  <nav class="nav">
+    <a data-page="home" href="index.html">Обзор</a>
+    <a data-page="lab" href="lab.html">Лаборатория</a>
+    <a data-page="models" href="models.html">Model Zoo</a>
+    <a data-page="architecture" href="architecture.html">Архитектура</a>
+    <a data-page="dz1" href="dz1.html">ДЗ №1</a>
+    <a data-page="roadmap" href="roadmap.html">Roadmap</a>
+  </nav>
+  <a class="ghost-btn" href="https://github.com/VictorKVS/Local-LLMs" target="_blank" rel="noreferrer">GitHub ↗</a>
+</header>
+
+<main>
+
+<section class="screen">
+  <div class="page-head">
+    <div>
+      <div class="kicker">MODEL ZOO</div>
+      <h1 class="page-title">Реестр моделей</h1>
+      <p>Единая витрина локальных моделей с назначением, форматом и статусом.</p>
+    </div>
+    <div class="status-pill done">6 моделей зарегистрировано</div>
+  </div>
+
+  <div class="model-cards">
+    <article class="model-card live">
+      <div class="model-top"><span class="model-size">3B</span><span class="badge live">LIVE</span></div>
+      <h3>Ministral 3B Instruct</h3><p>GGUF · Q4_K_M</p>
+      <dl><div><dt>Размер</dt><dd>2.00 GB</dd></div><div><dt>Роль</dt><dd>FAST / TRIAGE</dd></div></dl>
+    </article>
+    <article class="model-card">
+      <div class="model-top"><span class="model-size">7B</span><span class="badge done">BENCHMARKED</span></div>
+      <h3>Qwen1.5 7B Chat</h3><p>HF / Transformers</p>
+      <dl><div><dt>Размер</dt><dd>14.39 GB</dd></div><div><dt>Роль</dt><dd>BASELINE</dd></div></dl>
+    </article>
+    <article class="model-card">
+      <div class="model-top"><span class="model-size">7B</span><span class="badge done">BENCHMARKED</span></div>
+      <h3>DeepSeek LLM 7B Chat</h3><p>HF / Transformers</p>
+      <dl><div><dt>Размер</dt><dd>12.88 GB</dd></div><div><dt>Роль</dt><dd>ANALYSIS</dd></div></dl>
+    </article>
+    <article class="model-card">
+      <div class="model-top"><span class="model-size">8B</span><span class="badge ready">REGISTERED</span></div>
+      <h3>Ministral 8B Instruct</h3><p>GGUF · Q4_K_M</p>
+      <dl><div><dt>Размер</dt><dd>4.84 GB</dd></div><div><dt>Роль</dt><dd>GENERAL</dd></div></dl>
+    </article>
+    <article class="model-card">
+      <div class="model-top"><span class="model-size">14B</span><span class="badge ready">REGISTERED</span></div>
+      <h3>Qwen2.5 14B Instruct</h3><p>GGUF · Q4_K_M</p>
+      <dl><div><dt>Размер</dt><dd>8.37 GB</dd></div><div><dt>Роль</dt><dd>DEEP ANALYSIS</dd></div></dl>
+    </article>
+    <article class="model-card">
+      <div class="model-top"><span class="model-size">14B</span><span class="badge ready">REGISTERED</span></div>
+      <h3>Ministral 14B Reasoning</h3><p>GGUF · Q4_K_M</p>
+      <dl><div><dt>Размер</dt><dd>7.67 GB</dd></div><div><dt>Роль</dt><dd>REASONING</dd></div></dl>
+    </article>
+  </div>
+</section>
+
+</main>
+<footer>
+  <span>LOCAL LLMs · FATHER MODEL LAB</span>
+  <span>Local-first · Traceable · Reproducible</span>
+</footer>
+<script src="./app.js"></script>
+</body>
+</html>

@@ -1,28 +1,22 @@
-﻿
-Python
-
-pycache/
+﻿# Python
+__pycache__/
 *.py[cod]
 .venv/
 venv/
 env/
 
-Environment
-
+# Environment
 .env
 .env.*
 
-IDE
-
+# IDE
 .vscode/
 .idea/
 
-Jupyter
-
+# Jupyter
 .ipynb_checkpoints/
 
-Models — не отправляем гигабайты моделей в GitHub
-
+# Models
 *.gguf
 *.ggml
 *.bin
@@ -33,16 +27,13 @@ Models — не отправляем гигабайты моделей в GitHub
 models/*
 !models/.gitkeep
 
-OS
-
+# OS
 Thumbs.db
 .DS_Store
 
-Logs
-
+# Logs
 *.log
 
-Temporary
-
+# Temporary
 tmp/
 temp/

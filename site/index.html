@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ru" data-page="home">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Local LLMs / FATHER Model Lab">
+<title>Обзор · Local LLMs</title>
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="noise"></div>
+
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">F</span>
+    <span><strong>LOCAL LLMs</strong><small>FATHER MODEL LAB</small></span>
+  </a>
+  <nav class="nav">
+    <a data-page="home" href="index.html">Обзор</a>
+    <a data-page="lab" href="lab.html">Лаборатория</a>
+    <a data-page="models" href="models.html">Model Zoo</a>
+    <a data-page="architecture" href="architecture.html">Архитектура</a>
+    <a data-page="dz1" href="dz1.html">ДЗ №1</a>
+    <a data-page="roadmap" href="roadmap.html">Roadmap</a>
+  </nav>
+  <a class="ghost-btn" href="https://github.com/VictorKVS/Local-LLMs" target="_blank" rel="noreferrer">GitHub ↗</a>
+</header>
+
+<main>
+
+<section class="screen hero-screen">
+  <div class="hero-copy">
+    <div class="eyebrow"><span class="live-dot"></span> LOCAL AI · GPU LAB · MODEL ROUTING</div>
+    <h1>Локальные LLM<br><span>как инженерная система</span></h1>
+    <p class="lead">Учебный проект, который вырос в инженерную лабораторию локальных моделей: Model Zoo, GPU-runtime, benchmark, traceability и маршрутизация моделей.</p>
+    <div class="hero-actions">
+      <a class="primary-btn" href="dz1.html">Открыть ДЗ №1</a>
+      <a class="secondary-btn" href="architecture.html">Смотреть архитектуру</a>
+    </div>
+  </div>
+  <div class="hero-console">
+    <div class="console-head"><span></span><span></span><span></span><code>father-runtime://local</code></div>
+    <pre><span class="muted">$</span> father models status
+
+<span class="ok">● ONLINE</span>  RTX 3060 / 12 GB
+<span class="ok">● READY</span>   llama.cpp CUDA runtime
+<span class="ok">● LIVE</span>    Ministral 3B Q4_K_M
+
+VRAM      <b>3.69 GB</b>
+GEN       <b>97.95 tok/s</b>
+GPU       <b>82%</b>
+CONTEXT   <b>4096</b>
+
+<span class="muted">route:</span>
+request → gateway → runtime → GPU</pre>
+  </div>
+</section>
+
+<section class="overview-strip">
+  <article><span>GPU</span><strong>RTX 3060</strong><small>12 GB VRAM</small></article>
+  <article><span>LOCAL MODELS</span><strong>6</strong><small>HF + GGUF</small></article>
+  <article><span>LIVE SPEED</span><strong>97.95</strong><small>tokens / sec</small></article>
+  <article><span>DZ1 CORPUS</span><strong>36+</strong><small>готовых ответов</small></article>
+</section>
+
+</main>
+<footer>
+  <span>LOCAL LLMs · FATHER MODEL LAB</span>
+  <span>Local-first · Traceable · Reproducible</span>
+</footer>
+<script src="./app.js"></script>
+</body>
+</html>

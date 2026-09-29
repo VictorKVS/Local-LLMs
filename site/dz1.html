@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru" data-page="dz1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Local LLMs / FATHER Model Lab">
+<title>ДЗ №1 · Local LLMs</title>
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="noise"></div>
+
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">F</span>
+    <span><strong>LOCAL LLMs</strong><small>FATHER MODEL LAB</small></span>
+  </a>
+  <nav class="nav">
+    <a data-page="home" href="index.html">Обзор</a>
+    <a data-page="lab" href="lab.html">Лаборатория</a>
+    <a data-page="models" href="models.html">Model Zoo</a>
+    <a data-page="architecture" href="architecture.html">Архитектура</a>
+    <a data-page="dz1" href="dz1.html">ДЗ №1</a>
+    <a data-page="roadmap" href="roadmap.html">Roadmap</a>
+  </nav>
+  <a class="ghost-btn" href="https://github.com/VictorKVS/Local-LLMs" target="_blank" rel="noreferrer">GitHub ↗</a>
+</header>
+
+<main>
+
+<section class="screen">
+  <div class="page-head">
+    <div>
+      <div class="kicker">HOMEWORK 01</div>
+      <h1 class="page-title">Влияние параметров генерации</h1>
+      <p>Три независимых эксперимента и два типа заданий.</p>
+    </div>
+    <div class="status-pill done">Qwen + DeepSeek · 36 runs</div>
+  </div>
+
+  <div class="experiment-layout">
+    <article class="experiment-card">
+      <div class="exp-num">01</div><h3>Temperature</h3>
+      <p>Фиксируем <code>top_p=0.9</code>, <code>max_new_tokens=128</code>.</p>
+      <div class="chips"><span>0.1</span><span>0.7</span><span>1.2</span></div>
+    </article>
+    <article class="experiment-card">
+      <div class="exp-num">02</div><h3>Top-p</h3>
+      <p>Фиксируем <code>temperature=0.7</code>, <code>max_new_tokens=128</code>.</p>
+      <div class="chips"><span>0.1</span><span>0.8</span><span>0.99</span></div>
+    </article>
+    <article class="experiment-card">
+      <div class="exp-num">03</div><h3>Max tokens</h3>
+      <p>Фиксируем <code>temperature=0.7</code>, <code>top_p=0.9</code>.</p>
+      <div class="chips"><span>64</span><span>128</span><span>512</span></div>
+    </article>
+  </div>
+
+  <div class="questions">
+    <article><span>Q1 · STORY</span><p>«Напиши короткий рассказ (3–4 предложения) о том, как ты нашёл загадочную записку в неожиданном месте.»</p></article>
+    <article><span>Q2 · LOGIC TRAP</span><p>«В комнате горят 5 свечей. Две свечи погасли. Сколько свечей останется к утру? Объясни ответ.»</p></article>
+  </div>
+
+  <div class="result-strip">
+    <div><span>BASELINE</span><b>Ministral 3B</b></div>
+    <div><span>SPEED</span><b>97.95 tok/s</b></div>
+    <div><span>GPU</span><b>82%</b></div>
+    <div><span>VRAM</span><b>3.69 GB</b></div>
+    <div><span>STATUS</span><b class="positive">MEASURED</b></div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <span>LOCAL LLMs · FATHER MODEL LAB</span>
+  <span>Local-first · Traceable · Reproducible</span>
+</footer>
+<script src="./app.js"></script>
+</body>
+</html>

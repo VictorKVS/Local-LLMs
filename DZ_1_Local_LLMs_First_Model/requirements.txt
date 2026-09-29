@@ -1,0 +1,11 @@
+transformers>=4.56
+accelerate
+bitsandbytes
+pandas
+numpy
+streamlit
+plotly
+psutil
+sentencepiece
+protobuf
+safetensors

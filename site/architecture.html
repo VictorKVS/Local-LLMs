@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru" data-page="architecture">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Local LLMs / FATHER Model Lab">
+<title>Архитектура · Local LLMs</title>
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="noise"></div>
+
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">F</span>
+    <span><strong>LOCAL LLMs</strong><small>FATHER MODEL LAB</small></span>
+  </a>
+  <nav class="nav">
+    <a data-page="home" href="index.html">Обзор</a>
+    <a data-page="lab" href="lab.html">Лаборатория</a>
+    <a data-page="models" href="models.html">Model Zoo</a>
+    <a data-page="architecture" href="architecture.html">Архитектура</a>
+    <a data-page="dz1" href="dz1.html">ДЗ №1</a>
+    <a data-page="roadmap" href="roadmap.html">Roadmap</a>
+  </nav>
+  <a class="ghost-btn" href="https://github.com/VictorKVS/Local-LLMs" target="_blank" rel="noreferrer">GitHub ↗</a>
+</header>
+
+<main>
+
+<section class="screen">
+  <div class="page-head">
+    <div>
+      <div class="kicker">ARCHITECTURE</div>
+      <h1 class="page-title">Как работает система</h1>
+      <p>Единый слой доступа к локальным моделям с маршрутизацией по ролям.</p>
+    </div>
+  </div>
+
+  <div class="architecture-board">
+    <div class="flow big-flow">
+      <div class="node"><b>USER / AGENT</b><small>prompt / task</small></div><div class="arrow">→</div>
+      <div class="node"><b>MODEL GATEWAY</b><small>единый API</small></div><div class="arrow">→</div>
+      <div class="node"><b>MODEL ROUTER</b><small>роль + приоритет</small></div><div class="arrow">→</div>
+      <div class="node hot"><b>RUNTIME</b><small>llama.cpp / HF</small></div><div class="arrow">→</div>
+      <div class="node gpu"><b>RTX 3060</b><small>CUDA / VRAM</small></div>
+    </div>
+
+    <div class="arch-grid">
+      <article><span>01</span><h3>Model Registry</h3><p>Хранит путь, размер, формат, квантование, runtime и назначение модели.</p></article>
+      <article><span>02</span><h3>Resource Manager</h3><p>Проверяет VRAM/RAM, управляет загрузкой и выгрузкой модели.</p></article>
+      <article><span>03</span><h3>Model Router</h3><p>FAST, GENERAL, ANALYSIS, REASONING — выбирает модель по задаче.</p></article>
+      <article><span>04</span><h3>Benchmark Lab</h3><p>Собирает скорость, токены, качество и стабильность генерации.</p></article>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <span>LOCAL LLMs · FATHER MODEL LAB</span>
+  <span>Local-first · Traceable · Reproducible</span>
+</footer>
+<script src="./app.js"></script>
+</body>
+</html>
