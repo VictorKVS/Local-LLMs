@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru" data-page="architecture">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#06090d">
+  <meta name="description" content="Local LLMs · FATHER Model Lab">
+  <title>Архитектура · Local LLMs</title>
+  <link rel="stylesheet" href="./assets/css/tokens.css">
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/components.css">
+  <link rel="stylesheet" href="./assets/css/pages.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="./index.html" aria-label="Local LLMs home">
+      <span class="brand-mark">F</span>
+      <span>
+        <strong>LOCAL LLMs</strong>
+        <small>FATHER MODEL LAB</small>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a data-nav="home" href="./index.html">Обзор</a>
+      <a data-nav="lab" href="./lab.html">Лаборатория</a>
+      <a data-nav="models" href="./models.html">Model Zoo</a>
+      <a data-nav="architecture" href="./architecture.html">Архитектура</a>
+      <a data-nav="dz1" href="./dz1.html">ДЗ №1</a>
+      <a data-nav="roadmap" href="./roadmap.html">Roadmap</a>
+    </nav>
+    <a class="button header-github" href="https://github.com/VictorKVS/Local-LLMs" target="_blank" rel="noreferrer">GitHub ↗</a>
+  </div>
+</header>
+<main class="shell page">
+  <div class="page-head">
+    <div class="page-copy">
+      <div class="eyebrow">Architecture</div>
+      <h1>Как работает система</h1>
+      <p class="lead">Один слой доступа к локальным моделям, маршрутизация по ролям и измеряемое выполнение на GPU.</p>
+    </div>
+  </div>
+
+  <section class="card arch-board">
+    <div class="arch-flow">
+      <div class="arch-node"><strong>USER / AGENT</strong><small>prompt / task</small></div><span class="arch-arrow">→</span>
+      <div class="arch-node"><strong>MODEL GATEWAY</strong><small>единый API</small></div><span class="arch-arrow">→</span>
+      <div class="arch-node"><strong>MODEL ROUTER</strong><small>роль + приоритет</small></div><span class="arch-arrow">→</span>
+      <div class="arch-node accent"><strong>RUNTIME</strong><small>llama.cpp / HF</small></div><span class="arch-arrow">→</span>
+      <div class="arch-node accent"><strong>RTX 3060</strong><small>CUDA / VRAM</small></div>
+    </div>
+
+    <div class="arch-caps">
+      <article class="card arch-cap"><span class="cap-no">01</span><h3>Model Registry</h3><p>Путь, размер, формат, квантование, runtime и назначение модели.</p></article>
+      <article class="card arch-cap"><span class="cap-no">02</span><h3>Resource Manager</h3><p>VRAM/RAM preflight, загрузка и выгрузка модели, контроль процесса.</p></article>
+      <article class="card arch-cap"><span class="cap-no">03</span><h3>Model Router</h3><p>FAST, GENERAL, ANALYSIS, REASONING — выбор модели по задаче.</p></article>
+      <article class="card arch-cap"><span class="cap-no">04</span><h3>Benchmark Lab</h3><p>Скорость, токены, качество, устойчивость и reproducibility.</p></article>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="shell footer-inner">
+    <span>LOCAL LLMs · FATHER MODEL LAB</span>
+    <span>Local-first · Traceable · Reproducible</span>
+  </div>
+</footer>
+<script src="./assets/js/app.js"></script>
+</body>
+</html>
