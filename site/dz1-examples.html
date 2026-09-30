@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru" data-page="dz1">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#06090d">
+  <meta name="description" content="Local LLMs · FATHER Model Lab">
+  <link rel="icon" href="./favicon.svg?v=2" type="image/svg+xml">
+  <link rel="shortcut icon" href="./favicon.svg?v=2" type="image/svg+xml">
+  <title>ДЗ №1 · Примеры · Local LLMs</title>
+  <link rel="stylesheet" href="./assets/css/tokens.css">
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/components.css">
+  <link rel="stylesheet" href="./assets/css/pages.css">
+  <link rel="stylesheet" href="./assets/css/dz1-report.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="./index.html" aria-label="Local LLMs home">
+      <span class="brand-mark">F</span>
+      <span><strong>LOCAL LLMs</strong><small>FATHER MODEL LAB</small></span>
+    </a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a data-nav="home" href="./index.html">Обзор</a>
+      <a data-nav="lab" href="./lab.html">Лаборатория</a>
+      <a data-nav="models" href="./models.html">Model Zoo</a>
+      <a data-nav="architecture" href="./architecture.html">Архитектура</a>
+      <a data-nav="dz1" href="./dz1.html">ДЗ №1</a>
+      <a data-nav="roadmap" href="./roadmap.html">Roadmap</a>
+    </nav>
+    <a class="button header-github" href="https://github.com/VictorKVS/Local-LLMs" target="_blank" rel="noreferrer">GitHub ↗</a>
+  </div>
+</header>
+<main class="shell page">
+  <div class="page-head">
+    <div class="page-copy">
+      <div class="eyebrow">Homework 01 · Examples</div>
+      <h1>Примеры ответов</h1>
+      <p class="lead">Хороший, обрезанный и проблемный ответы из реальных прогонов — без ручного «приукрашивания» результатов.</p>
+    </div>
+    <span class="badge badge-mint">source outputs</span>
+  </div>
+  <nav class="dz-subnav" aria-label="Разделы ДЗ №1">
+  <a  href="./dz1.html">Методика</a>
+  <a  href="./dz1-results.html">Результаты</a>
+  <a aria-current="page" href="./dz1-examples.html">Примеры</a>
+  <a  href="./dz1-conclusions.html">Выводы</a>
+</nav>
+
+  <section class="example-grid">
+    <article class="card example-card">
+      <span class="label">Qwen · temperature 0.7</span>
+      <h3>Рассказ · формат выполнен</h3>
+      <p class="example-text">«В поисках забытой сувенира, я случайно остановился перед старым домом, где заметил небольшую тень на стене. Под ней, скрытое от視ла, лежало странный квадратный блок. Прокрутив его, обнаружил внутри невероятную запись – мистическое сообщение, отправляющее меня на неизведанные приключения.»</p>
+      <div class="example-meta"><span>3 sentences</span><span>106 tokens</span><span>8.51 tok/s</span></div>
+    </article>
+
+    <article class="card example-card warn">
+      <span class="label">Qwen · max_new_tokens 64</span>
+      <h3>Явное обрезание ответа</h3>
+      <p class="example-text">«В поисках забытой сувенира, я случайно остановился перед старым домом, где заметил небольшую тень на стене. Под ней, скрытое от視ла, лежало странный квадратный…»</p>
+      <div class="example-meta"><span>64 / 64 tokens</span><span>unfinished</span><span>instruction fail</span></div>
+    </article>
+
+    <article class="card example-card bad">
+      <span class="label">DeepSeek · temperature 0.7</span>
+      <h3>Некорректный pipeline output</h3>
+      <p class="example-text"><span class="mono">|34|</span></p>
+      <div class="example-meta"><span>5 tokens</span><span>story fail</span><span>template/tokenization suspect</span></div>
+    </article>
+
+    <article class="card example-card warn">
+      <span class="label">Qwen · logic trap</span>
+      <h3>Ответ и auto-метрика расходятся</h3>
+      <p class="example-text">«К утру, в комнате останутся 3 свечи… 5 - 2 = 3 свечи будут оставаться в комнате.» При этом поле <span class="mono">trap_logic_auto</span> в CSV равно <strong>1</strong>.</p>
+      <div class="example-meta"><span>manual audit required</span><span>evaluator defect</span></div>
+    </article>
+  </section>
+
+  <div class="source-line">SOURCE · DZ_1_Local_LLMs_First_Model/data/evaluated_results.csv</div>
+</main>
+<footer class="site-footer"><div class="shell footer-inner">
+  <span>LOCAL LLMs · FATHER MODEL LAB</span>
+  <span>Local-first · Traceable · Reproducible</span>
+</div></footer>
+<script src="./assets/js/app.js"></script>
+</body></html>
