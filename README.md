@@ -79,6 +79,15 @@ Local-LLMs/
 
 ### DZ 01 · Первая локальная LLM
 
+[![DZ01](https://img.shields.io/badge/DZ%2001-final%20report-58e1cf?style=flat-square)](./DZ_1_Local_LLMs_First_Model/reports/REPORT.md)
+[![Runs](https://img.shields.io/badge/valid%20runs-36-69a7ff?style=flat-square)](./DZ_1_Local_LLMs_First_Model/data/evaluated_results.csv)
+
+![DZ1 Results](./DZ_1_Local_LLMs_First_Model/screenshots/06_dz1_results.png)
+
+**[README ДЗ](./DZ_1_Local_LLMs_First_Model/README.md) · [Полный отчёт](./DZ_1_Local_LLMs_First_Model/reports/REPORT.md) · [CSV](./DZ_1_Local_LLMs_First_Model/data/evaluated_results.csv)**
+
+
+
 Цель: исследовать влияние параметров генерации на стиль, связность и полноту ответа.
 
 Эксперименты:
