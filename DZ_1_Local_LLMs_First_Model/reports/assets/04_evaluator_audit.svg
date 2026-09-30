@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640">
+<rect width="1200" height="640" rx="28" fill="#091119"/>
+<text x="70" y="82" fill="#eef5f6" font-family="Inter,Segoe UI,Arial" font-size="34" font-weight="700">Evaluator audit · candle logic task</text>
+<text x="70" y="118" fill="#81929a" font-family="Inter,Segoe UI,Arial" font-size="18">Qwen answers say “3 candles”, while the intended riddle answer is 2.</text>
+<line x1="145" y1="510" x2="1060" y2="510" stroke="#2b3b44" stroke-width="2"/>
+<line x1="145" y1="180" x2="145" y2="510" stroke="#2b3b44" stroke-width="2"/>
+<text x="100" y="515" fill="#6e7e86" font-family="Consolas,monospace" font-size="14">0</text>
+<text x="92" y="348" fill="#6e7e86" font-family="Consolas,monospace" font-size="14">50%</text>
+<text x="82" y="185" fill="#6e7e86" font-family="Consolas,monospace" font-size="14">100%</text>
+<line x1="145" y1="345" x2="1060" y2="345" stroke="#17252d"/>
+<line x1="145" y1="180" x2="1060" y2="180" stroke="#17252d"/>
+
+<rect x="250" y="180" width="210" height="330" rx="14" fill="#58e1cf"/>
+<rect x="515" y="488" width="210" height="22" rx="10" fill="#ff7e8f"/>
+<text x="355" y="160" text-anchor="middle" fill="#8ef0e2" font-family="Inter,Segoe UI,Arial" font-size="28" font-weight="700">9 / 9</text>
+<text x="620" y="468" text-anchor="middle" fill="#ff9aaa" font-family="Inter,Segoe UI,Arial" font-size="28" font-weight="700">0 / 9</text>
+<text x="355" y="548" text-anchor="middle" fill="#aab7bd" font-family="Inter,Segoe UI,Arial" font-size="20">auto flag</text>
+<text x="620" y="548" text-anchor="middle" fill="#aab7bd" font-family="Inter,Segoe UI,Arial" font-size="20">manual correctness</text>
+
+<rect x="805" y="220" width="250" height="220" rx="18" fill="#101821" stroke="#263742"/>
+<text x="835" y="265" fill="#f1c66f" font-family="Inter,Segoe UI,Arial" font-size="18" font-weight="700">Finding</text>
+<text x="835" y="302" fill="#b8c5ca" font-family="Inter,Segoe UI,Arial" font-size="16">The automatic metric is not</text>
+<text x="835" y="328" fill="#b8c5ca" font-family="Inter,Segoe UI,Arial" font-size="16">trustworthy for this task.</text>
+<text x="835" y="370" fill="#81929a" font-family="Inter,Segoe UI,Arial" font-size="14">Evaluator quality must be tested</text>
+<text x="835" y="394" fill="#81929a" font-family="Inter,Segoe UI,Arial" font-size="14">as part of the ML/LLM pipeline.</text>
+
+<text x="70" y="600" fill="#81929a" font-family="Inter,Segoe UI,Arial" font-size="15">Expected riddle logic: 2 extinguished candles remain; the other 3 may burn down.</text>
+</svg>
