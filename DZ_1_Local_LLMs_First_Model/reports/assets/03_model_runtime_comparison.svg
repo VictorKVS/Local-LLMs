@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640">
+<rect width="1200" height="640" rx="28" fill="#091119"/>
+<text x="70" y="82" fill="#eef5f6" font-family="Inter,Segoe UI,Arial" font-size="34" font-weight="700">Raw runtime comparison · 18 runs per model</text>
+<text x="70" y="118" fill="#81929a" font-family="Inter,Segoe UI,Arial" font-size="18">Throughput and latency are shown as measured; DeepSeek outputs were not semantically valid.</text>
+<text x="100" y="185" fill="#b8c5ca" font-family="Inter,Segoe UI,Arial" font-size="20" font-weight="700">Average generation speed</text>
+<line x1="100" y1="470" x2="545" y2="470" stroke="#2b3b44" stroke-width="2"/>
+<rect x="155" y="282" width="120" height="188" rx="10" fill="#58e1cf"/>
+<rect x="350" y="217" width="120" height="253" rx="10" fill="#72a8ff"/>
+<text x="215" y="265" text-anchor="middle" fill="#eef5f6" font-family="Inter,Segoe UI,Arial" font-size="25" font-weight="700">8.31</text>
+<text x="410" y="200" text-anchor="middle" fill="#eef5f6" font-family="Inter,Segoe UI,Arial" font-size="25" font-weight="700">11.17</text>
+<text x="215" y="505" text-anchor="middle" fill="#aab7bd" font-family="Inter,Segoe UI,Arial" font-size="18">Qwen1.5-7B</text>
+<text x="410" y="505" text-anchor="middle" fill="#aab7bd" font-family="Inter,Segoe UI,Arial" font-size="18">DeepSeek-7B</text>
+<text x="215" y="535" text-anchor="middle" fill="#6e7e86" font-family="Consolas,monospace" font-size="14">tok/s</text>
+<text x="410" y="535" text-anchor="middle" fill="#6e7e86" font-family="Consolas,monospace" font-size="14">tok/s</text>
+
+<text x="650" y="185" fill="#b8c5ca" font-family="Inter,Segoe UI,Arial" font-size="20" font-weight="700">Average latency</text>
+<line x1="650" y1="470" x2="1095" y2="470" stroke="#2b3b44" stroke-width="2"/>
+<rect x="705" y="235" width="120" height="235" rx="10" fill="#58e1cf"/>
+<rect x="900" y="421" width="120" height="49" rx="10" fill="#72a8ff"/>
+<text x="765" y="218" text-anchor="middle" fill="#eef5f6" font-family="Inter,Segoe UI,Arial" font-size="25" font-weight="700">10.36</text>
+<text x="960" y="403" text-anchor="middle" fill="#eef5f6" font-family="Inter,Segoe UI,Arial" font-size="25" font-weight="700">2.14</text>
+<text x="765" y="505" text-anchor="middle" fill="#aab7bd" font-family="Inter,Segoe UI,Arial" font-size="18">Qwen1.5-7B</text>
+<text x="960" y="505" text-anchor="middle" fill="#aab7bd" font-family="Inter,Segoe UI,Arial" font-size="18">DeepSeek-7B</text>
+<text x="765" y="535" text-anchor="middle" fill="#6e7e86" font-family="Consolas,monospace" font-size="14">seconds</text>
+<text x="960" y="535" text-anchor="middle" fill="#6e7e86" font-family="Consolas,monospace" font-size="14">seconds</text>
+
+<rect x="70" y="570" width="1060" height="42" rx="10" fill="#1b1710" stroke="#4c4026"/>
+<text x="95" y="597" fill="#f1c66f" font-family="Inter,Segoe UI,Arial" font-size="15">Important: faster DeepSeek execution is not a quality win — outputs indicate a chat-template / tokenization integration problem.</text>
+</svg>
