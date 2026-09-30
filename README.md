@@ -82,9 +82,28 @@ Local-LLMs/
 [![DZ01](https://img.shields.io/badge/DZ%2001-final%20report-58e1cf?style=flat-square)](./DZ_1_Local_LLMs_First_Model/reports/REPORT.md)
 [![Runs](https://img.shields.io/badge/valid%20runs-36-69a7ff?style=flat-square)](./DZ_1_Local_LLMs_First_Model/data/evaluated_results.csv)
 
-![DZ1 Results](./DZ_1_Local_LLMs_First_Model/screenshots/06_dz1_results.png)
-
 **[README ДЗ](./DZ_1_Local_LLMs_First_Model/README.md) · [Полный отчёт](./DZ_1_Local_LLMs_First_Model/reports/REPORT.md) · [CSV](./DZ_1_Local_LLMs_First_Model/data/evaluated_results.csv)**
+
+### Визуальный отчёт DZ 01
+
+<table>
+<tr>
+<td width="50%"><img src="./DZ_1_Local_LLMs_First_Model/screenshots/01_overview.png" alt="Overview"><br><b>01 · Course overview</b></td>
+<td width="50%"><img src="./DZ_1_Local_LLMs_First_Model/screenshots/02_runtime_lab.png" alt="Runtime Lab"><br><b>02 · Runtime Lab</b></td>
+</tr>
+<tr>
+<td><img src="./DZ_1_Local_LLMs_First_Model/screenshots/03_model_zoo.png" alt="Model Zoo"><br><b>03 · Model Zoo</b></td>
+<td><img src="./DZ_1_Local_LLMs_First_Model/screenshots/04_architecture.png" alt="Architecture"><br><b>04 · Architecture</b></td>
+</tr>
+<tr>
+<td><img src="./DZ_1_Local_LLMs_First_Model/screenshots/05_dz1_method.png" alt="DZ1 method"><br><b>05 · Method</b></td>
+<td><img src="./DZ_1_Local_LLMs_First_Model/screenshots/06_dz1_results.png" alt="DZ1 results"><br><b>06 · Results</b></td>
+</tr>
+<tr>
+<td><img src="./DZ_1_Local_LLMs_First_Model/screenshots/07_dz1_examples.png" alt="DZ1 examples"><br><b>07 · Examples</b></td>
+<td><img src="./DZ_1_Local_LLMs_First_Model/screenshots/08_dz1_conclusions.png" alt="DZ1 conclusions"><br><b>08 · Conclusions</b></td>
+</tr>
+</table>
 
 
 
