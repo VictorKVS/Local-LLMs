@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ru" data-page="dz1">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#06090d">
+  <meta name="description" content="Local LLMs · FATHER Model Lab">
+  <link rel="icon" href="./favicon.svg?v=2" type="image/svg+xml">
+  <link rel="shortcut icon" href="./favicon.svg?v=2" type="image/svg+xml">
+  <title>ДЗ №1 · Результаты · Local LLMs</title>
+  <link rel="stylesheet" href="./assets/css/tokens.css">
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/components.css">
+  <link rel="stylesheet" href="./assets/css/pages.css">
+  <link rel="stylesheet" href="./assets/css/dz1-report.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="./index.html" aria-label="Local LLMs home">
+      <span class="brand-mark">F</span>
+      <span><strong>LOCAL LLMs</strong><small>FATHER MODEL LAB</small></span>
+    </a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a data-nav="home" href="./index.html">Обзор</a>
+      <a data-nav="lab" href="./lab.html">Лаборатория</a>
+      <a data-nav="models" href="./models.html">Model Zoo</a>
+      <a data-nav="architecture" href="./architecture.html">Архитектура</a>
+      <a data-nav="dz1" href="./dz1.html">ДЗ №1</a>
+      <a data-nav="roadmap" href="./roadmap.html">Roadmap</a>
+    </nav>
+    <a class="button header-github" href="https://github.com/VictorKVS/Local-LLMs" target="_blank" rel="noreferrer">GitHub ↗</a>
+  </div>
+</header>
+<main class="shell page">
+  <div class="page-head">
+    <div class="page-copy">
+      <div class="eyebrow">Homework 01 · Results</div>
+      <h1>Результаты экспериментов</h1>
+      <p class="lead">Фактический срез из <span class="mono">evaluated_results.csv</span>: 36 валидных прогонов и одна отдельная ошибка загрузки модели.</p>
+    </div>
+    <span class="badge badge-info">real CSV data</span>
+  </div>
+  <nav class="dz-subnav" aria-label="Разделы ДЗ №1">
+  <a  href="./dz1.html">Методика</a>
+  <a aria-current="page" href="./dz1-results.html">Результаты</a>
+  <a  href="./dz1-examples.html">Примеры</a>
+  <a  href="./dz1-conclusions.html">Выводы</a>
+</nav>
+
+  <section class="result-kpis">
+    <article class="card result-kpi"><span class="label">Valid runs</span><strong>36</strong><small>18 Qwen + 18 DeepSeek</small></article>
+    <article class="card result-kpi"><span class="label">Qwen story format</span><strong>6 / 9</strong><small>3–4 предложения по auto check</small></article>
+    <article class="card result-kpi"><span class="label">Qwen avg speed</span><strong>8.31</strong><small>tokens / sec</small></article>
+    <article class="card result-kpi"><span class="label">Model load errors</span><strong>1</strong><small>Mistral-7B weights missing</small></article>
+  </section>
+
+  <section class="compare-grid">
+    <article class="card compare-card">
+      <div class="compare-head"><h3>Qwen1.5 7B</h3><span class="badge badge-mint">usable baseline</span></div>
+      <div class="compare-row"><span>Runs</span><div class="mini-meter"><i style="width:100%"></i></div><b>18</b></div>
+      <div class="compare-row"><span>Avg speed</span><div class="mini-meter"><i style="width:74%"></i></div><b>8.31 t/s</b></div>
+      <div class="compare-row"><span>Avg latency</span><div class="mini-meter"><i style="width:86%"></i></div><b>10.36 s</b></div>
+      <div class="compare-row"><span>Story 3–4 sent.</span><div class="mini-meter"><i style="width:67%"></i></div><b>6 / 9</b></div>
+      <div class="compare-row"><span>Trap auto flag</span><div class="mini-meter"><i style="width:100%"></i></div><b>9 / 9*</b></div>
+    </article>
+
+    <article class="card compare-card">
+      <div class="compare-head"><h3>DeepSeek LLM 7B</h3><span class="badge badge-ready">pipeline issue</span></div>
+      <div class="compare-row"><span>Runs</span><div class="mini-meter"><i style="width:100%"></i></div><b>18</b></div>
+      <div class="compare-row"><span>Avg speed</span><div class="mini-meter"><i style="width:100%"></i></div><b>11.17 t/s</b></div>
+      <div class="compare-row"><span>Avg latency</span><div class="mini-meter"><i style="width:18%"></i></div><b>2.14 s</b></div>
+      <div class="compare-row"><span>Story 3–4 sent.</span><div class="mini-meter"><i style="width:0%"></i></div><b>0 / 9</b></div>
+      <div class="compare-row"><span>Trap auto flag</span><div class="mini-meter"><i style="width:0%"></i></div><b>0 / 9</b></div>
+    </article>
+  </section>
+
+  <div class="audit-note"><strong>* Audit:</strong> автоматический <span class="mono">trap_logic_auto</span> помечает ответы Qwen как успешные, хотя в тексте модель отвечает «3 свечи». Для итоговой оценки этот показатель требует ручной проверки и не должен использоваться как готовая метрика логической корректности.</div>
+  <div class="source-line">SOURCE · DZ_1_Local_LLMs_First_Model/data/evaluated_results.csv</div>
+</main>
+<footer class="site-footer"><div class="shell footer-inner">
+  <span>LOCAL LLMs · FATHER MODEL LAB</span>
+  <span>Local-first · Traceable · Reproducible</span>
+</div></footer>
+<script src="./assets/js/app.js"></script>
+</body></html>
