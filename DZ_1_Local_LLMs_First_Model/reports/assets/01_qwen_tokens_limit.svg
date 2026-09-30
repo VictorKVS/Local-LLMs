@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#081018"/><stop offset="1" stop-color="#0d1720"/></linearGradient>
+  <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#67ead8"/><stop offset="1" stop-color="#2fc4b0"/></linearGradient>
+</defs>
+<rect width="1200" height="640" rx="28" fill="url(#bg)"/>
+<text x="70" y="82" fill="#eef5f6" font-family="Inter,Segoe UI,Arial" font-size="34" font-weight="700">Qwen1.5-7B · effect of max_new_tokens</text>
+<text x="70" y="118" fill="#81929a" font-family="Inter,Segoe UI,Arial" font-size="18">Average generated tokens across Q1 + Q2 for each token limit</text>
+<line x1="130" y1="520" x2="1090" y2="520" stroke="#2a3a44" stroke-width="2"/>
+<line x1="130" y1="170" x2="130" y2="520" stroke="#2a3a44" stroke-width="2"/>
+<text x="84" y="524" fill="#6e7e86" font-family="Consolas,monospace" font-size="14">0</text>
+<text x="70" y="444" fill="#6e7e86" font-family="Consolas,monospace" font-size="14">25</text>
+<text x="70" y="356" fill="#6e7e86" font-family="Consolas,monospace" font-size="14">50</text>
+<text x="70" y="268" fill="#6e7e86" font-family="Consolas,monospace" font-size="14">75</text>
+<text x="62" y="180" fill="#6e7e86" font-family="Consolas,monospace" font-size="14">100</text>
+<line x1="130" y1="432" x2="1090" y2="432" stroke="#17252d" stroke-width="1"/>
+<line x1="130" y1="344" x2="1090" y2="344" stroke="#17252d" stroke-width="1"/>
+<line x1="130" y1="256" x2="1090" y2="256" stroke="#17252d" stroke-width="1"/>
+<line x1="130" y1="168" x2="1090" y2="168" stroke="#17252d" stroke-width="1"/>
+<rect x="220" y="294" width="190" height="226" rx="12" fill="url(#bar)"/>
+<rect x="505" y="197" width="190" height="323" rx="12" fill="url(#bar)"/>
+<rect x="790" y="197" width="190" height="323" rx="12" fill="url(#bar)"/>
+<text x="315" y="275" text-anchor="middle" fill="#eef5f6" font-family="Inter,Segoe UI,Arial" font-size="28" font-weight="700">64.0</text>
+<text x="600" y="178" text-anchor="middle" fill="#eef5f6" font-family="Inter,Segoe UI,Arial" font-size="28" font-weight="700">91.5</text>
+<text x="885" y="178" text-anchor="middle" fill="#eef5f6" font-family="Inter,Segoe UI,Arial" font-size="28" font-weight="700">91.5</text>
+<text x="315" y="560" text-anchor="middle" fill="#aab7bd" font-family="Inter,Segoe UI,Arial" font-size="20">limit 64</text>
+<text x="600" y="560" text-anchor="middle" fill="#aab7bd" font-family="Inter,Segoe UI,Arial" font-size="20">limit 128</text>
+<text x="885" y="560" text-anchor="middle" fill="#aab7bd" font-family="Inter,Segoe UI,Arial" font-size="20">limit 512</text>
+<text x="70" y="610" fill="#f0c56b" font-family="Inter,Segoe UI,Arial" font-size="16">Observation: 64 truncated both tasks; 128 was sufficient here; 512 did not increase generated length.</text>
+</svg>
